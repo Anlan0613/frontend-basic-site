@@ -108,6 +108,72 @@ img {
   margin: 0;
 }
 
+/* sections */
+
+.sections {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  width: 100%;
+}
+
+/* about */
+
+.about {
+  background-color: var(--color-background-black);
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.section-title-content {
+  color: var(--color-white);
+  font-family: Anton;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.section-title-red {
+  color: var(--color-accent-red);
+}
+
+.section-title-yellow {
+  color: var(--color-accent-yellow);
+}
+
+.section-body {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.section-body-text-content {
+  width: 100%;
+  max-width: 460px;
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-body-img-content {
+  width: 320px;
+  height: 180px;
+}
+
+/* courses */
+
 @media (max-width: 750px) {
   .header {
     height: 60px;
@@ -128,5 +194,13 @@ img {
 
   .hero-texts {
     gap: 20px;
+  }
+
+  .section-body-text-content {
+    max-width: 100%;
+  }
+
+  .section-body-img {
+    display: none;
   }
 }

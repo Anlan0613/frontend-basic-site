@@ -115,8 +115,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
   position: relative;
   width: 100%;
 }
@@ -137,7 +136,7 @@ img {
 
 .section-title-content {
   color: var(--color-white);
-  font-family: Anton;
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -218,7 +217,7 @@ img {
 
 .section-card-title-content {
   color: var(--color-white);
-  font-family: Anton;
+  font-family: var(--font-family-heading);
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -293,6 +292,7 @@ img {
 }
 
 @media (max-width: 750px) {
+  /* header */
   .header {
     height: 60px;
   }
@@ -301,6 +301,7 @@ img {
     height: 30px;
   }
 
+  /* hero */
   .hero {
     margin-top: 60px;
     padding: 40px 20px;
@@ -314,8 +315,22 @@ img {
     gap: 20px;
   }
 
+  /* sections */
+  .sections {
+    padding: 0;
+  }
+
+  .section-container {
+    padding: 40px 20px;
+  }
+
+  .section-title-content {
+    font-size: 24px;
+  }
+
   .section-body-text-content {
     max-width: 100%;
+    font-family: Inter;
   }
 
   .section-body-img {

@@ -174,6 +174,111 @@ img {
 
 /* courses */
 
+.courses {
+  background-color: var(--color-background-navy);
+}
+
+.section-cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-card {
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  padding: 0;
+  gap: 10;
+}
+
+.section-card-title {
+  background-image: url(./img/live.png);
+  background-size: cover;
+  display: flex;
+  width: 250px;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-card-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-hero-overlay);
+}
+
+.section-card-title-content {
+  color: var(--color-white);
+  font-family: Anton;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  z-index: 1;
+}
+
+.section-card-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  gap: 0;
+}
+
+.section-card-text-content {
+  margin: 0 0;
+  width: 100%;
+  max-width: 510px;
+  color: var(--color-black);
+}
+
+.more {
+  margin: 0 0;
+  color: var(--color-accent-red);
+}
+
+.section-button {
+  display: flex;
+  align-self: stretch;
+  height: 60px;
+  padding: 10px 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.more-course {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.button-arrow {
+  position: absolute;
+  right: 40px;
+}
+
+.red-shadow {
+  background-color: var(--color-accent-yellow);
+  box-shadow: 4px 4px 0 var(--color-accent-red);
+}
+
+.yellow-shadow {
+  background-color: var(--color-accent-red);
+  box-shadow: 4px 4px 0 var(--color-accent-yellow);
+}
+
 @media (max-width: 750px) {
   .header {
     height: 60px;

@@ -272,11 +272,24 @@ img {
 .red-shadow {
   background-color: var(--color-accent-yellow);
   box-shadow: 4px 4px 0 var(--color-accent-red);
+  transition-duration: 0.3s;
 }
 
 .yellow-shadow {
   background-color: var(--color-accent-red);
   box-shadow: 4px 4px 0 var(--color-accent-yellow);
+  transition-duration: 0.3s;
+}
+
+/* hover */
+.red-shadow:hover {
+  background-color: var(--color-course-hover-yellow);
+  box-shadow: 12px 12px 2px 0 var(--color-accent-red);
+}
+
+.yellow-shadow:hover {
+  background-color: var(--color-button-hover-red);
+  box-shadow: 12px 12px 2px 0 var(--color-accent-yellow);
 }
 
 @media (max-width: 750px) {

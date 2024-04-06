@@ -372,6 +372,10 @@ img {
     font-size: 12px;
   }
 
+  .section-button {
+    height: 40px;
+  }
+
   .more {
     font-family: Inter;
     font-size: 12px;
@@ -383,5 +387,9 @@ img {
 
   .button-arrow {
     right: 20px;
+  }
+
+  .arrow {
+    width: 30px;
   }
 }

@@ -263,6 +263,7 @@ img {
   align-items: center;
   position: relative;
   text-decoration: none;
+  border: 0;
 }
 
 .more-course {
@@ -286,6 +287,84 @@ img {
   background-color: var(--color-accent-red);
   box-shadow: 4px 4px 0 var(--color-accent-yellow);
   transition-duration: 0.3s;
+}
+
+.black-shadow {
+  background-color: var(--color-accent-red);
+  box-shadow: 4px 4px 0 var(--color-black);
+  transition-duration: 0.3s;
+}
+
+/* signup */
+
+.signup {
+  background-color: var(--color-accent-yellow);
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.section-form-intro-content {
+  margin: 0;
+}
+
+.section-form {
+  display: flex;
+  align-self: stretch;
+}
+
+.section-form-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  align-items: flex-start;
+}
+
+.label {
+  width: 250px;
+}
+
+.input-text {
+  border-radius: 8px;
+  border: 1px solid var(--form-border-red, #DF6DA2);
+  background: var(--form-background-yellow, #FFFAB9);
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="text"], textarea[id="comment"] {
+  color: var(--color-form-placeholder-gray);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--color-background-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.footer-text {
+  color: var(--color-white);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* hover */

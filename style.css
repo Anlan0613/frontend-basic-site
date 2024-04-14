@@ -389,6 +389,11 @@ input[type="text"], textarea[id="comment"] {
   box-shadow: 12px 12px 2px 0 var(--color-black);
 }
 
+/* ボタン押下 */
+.section-button:active {
+  transform: translateY(2px);
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 750px) {
   /* header */

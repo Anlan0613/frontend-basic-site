@@ -332,9 +332,12 @@ img {
 .form-field {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .label {
+  display: block;
+  float: left;
   width: 250px;
   font-size: 20px;
   font-weight: 400;
@@ -344,9 +347,9 @@ img {
   border-radius: 8px;
   border: 1px solid var(--form-border-red, #DF6DA2);
   background: var(--form-background-yellow, #FFFAB9);
-  display: flex;
+  display: block;
+  flex-grow: 1;
   padding: 10px;
-  width: 100%;
 }
 
 input[type="text"], textarea[id="comment"] {
